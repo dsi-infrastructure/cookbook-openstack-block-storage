@@ -185,7 +185,6 @@ when 'cinder.volume.drivers.lvm.LVMISCSIDriver'
 
       service 'cinder-group-active' do
         service_name 'cinder-group-active'
-        provider Chef::Provider::Service::Upstart
 
         action [:enable, :start]
       end
